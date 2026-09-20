@@ -1,0 +1,197 @@
+@import "tailwindcss";
+
+/* ===== DESIGN SYSTEM - Wedding W & R ===== */
+
+@theme {
+  /* Colors */
+  --color-ivory: #FDFBF7;
+  --color-ivory-dark: #F5F0E8;
+  --color-cobalt: #1D4ED8;
+  --color-cobalt-dark: #0F2C59;
+  --color-cobalt-light: #3B82F6;
+  --color-sapphire: #1E40AF;
+  --color-blue-100: #DBEAFE;
+  --color-blue-200: #BFDBFE;
+  --color-blue-300: #93C5FD;
+  --color-blue-400: #60A5FA;
+  --color-blue-500: #3B82F6;
+  --color-blue-600: #2563EB;
+  --color-blue-700: #1D4ED8;
+  --color-blue-800: #1E40AF;
+  --color-blue-900: #1E3A8A;
+  --color-cream: #F9F6F0;
+  --color-warm-white: #FFFDF9;
+
+  /* Fonts */
+  --font-script: 'Great Vibes', cursive;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  /* Animations */
+  --animate-ken-burns: ken-burns 25s ease-in-out infinite alternate;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 3s ease-in-out infinite;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+}
+
+/* ===== KEYFRAMES ===== */
+
+@keyframes ken-burns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.12) translate(-2%, -1%);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== BASE STYLES ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #E8E0D4;
+  color: var(--color-cobalt-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== CUSTOM UTILITIES ===== */
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+.font-cinzel {
+  font-family: var(--font-display);
+}
+
+/* Torn paper mask top */
+.torn-paper-top {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40 Q30 10 60 35 Q90 60 120 30 Q150 0 180 25 Q210 50 240 20 Q270 -5 300 30 Q330 65 360 35 Q390 5 420 40 Q450 75 480 30 Q510 -10 540 25 Q570 60 600 35 Q630 10 660 40 Q690 70 720 25 Q750 -10 780 30 Q810 65 840 35 Q870 5 900 45 Q930 80 960 30 Q990 -15 1020 35 Q1050 80 1080 40 Q1110 0 1140 30 Q1170 60 1200 35 L1200 120 L0 120 Z' fill='white'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40 Q30 10 60 35 Q90 60 120 30 Q150 0 180 25 Q210 50 240 20 Q270 -5 300 30 Q330 65 360 35 Q390 5 420 40 Q450 75 480 30 Q510 -10 540 25 Q570 60 600 35 Q630 10 660 40 Q690 70 720 25 Q750 -10 780 30 Q810 65 840 35 Q870 5 900 45 Q930 80 960 30 Q990 -15 1020 35 Q1050 80 1080 40 Q1110 0 1140 30 Q1170 60 1200 35 L1200 120 L0 120 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Torn paper mask bottom */
+.torn-paper-bottom {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 L1200 0 L1200 80 Q1170 110 1140 85 Q1110 60 1080 90 Q1050 120 1020 85 Q990 50 960 80 Q930 110 900 75 Q870 40 840 85 Q810 120 780 90 Q750 60 720 85 Q690 110 660 80 Q630 50 600 85 Q570 120 540 90 Q510 60 480 80 Q450 100 420 75 Q390 50 360 85 Q330 120 300 90 Q270 60 240 80 Q210 100 180 75 Q150 50 120 90 Q90 120 60 85 Q30 50 0 80 Z' fill='white'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0 L1200 0 L1200 80 Q1170 110 1140 85 Q1110 60 1080 90 Q1050 120 1020 85 Q990 50 960 80 Q930 110 900 75 Q870 40 840 85 Q810 120 780 90 Q750 60 720 85 Q690 110 660 80 Q630 50 600 85 Q570 120 540 90 Q510 60 480 80 Q450 100 420 75 Q390 50 360 85 Q330 120 300 90 Q270 60 240 80 Q210 100 180 75 Q150 50 120 90 Q90 120 60 85 Q30 50 0 80 Z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue-300);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cobalt);
+}
+
+/* Gallery lightbox overlay */
+.lightbox-overlay {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Music button pulse */
+.music-pulse {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Gradient overlay for hero */
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 44, 89, 0.3) 0%,
+    rgba(15, 44, 89, 0.1) 30%,
+    rgba(15, 44, 89, 0.05) 50%,
+    rgba(15, 44, 89, 0.4) 80%,
+    rgba(15, 44, 89, 0.7) 100%
+  );
+}
+
+/* Monogram circle */
+.monogram-ring {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 30px rgba(29, 78, 216, 0.15), inset 0 0 30px rgba(29, 78, 216, 0.05);
+}
+
+/* Arch frame for wedding program */
+.arch-frame {
+  border: 2px solid var(--color-blue-300);
+  border-radius: 50% 50% 4px 4px / 30% 30% 4px 4px;
+}
+
+/* Color swatch */
+.color-swatch {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.color-swatch:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 15px rgba(29, 78, 216, 0.3);
+}
