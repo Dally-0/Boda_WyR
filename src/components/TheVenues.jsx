@@ -112,7 +112,7 @@ export default function TheVenues() {
 
             {/* Passport-Style Google Maps Button */}
             <a
-              href="https://share.google/f7CpnxbVOCOt2f9bw"
+              href="https://maps.app.goo.gl/tvtgBmKdhkSC23aC7"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative block w-full bg-gradient-to-br from-[#0D1F3C] via-[#162C54] to-[#0A182F] rounded-2xl p-4 sm:p-5 border border-[#C5A880]/60 hover:border-[#C5A880] shadow-[0_8px_24px_rgba(13,31,60,0.28)] hover:shadow-[0_12px_32px_rgba(13,31,60,0.4)] transition-all duration-300 overflow-hidden text-left"
