@@ -45,7 +45,7 @@ export default function Countdown() {
               {String(unit.value).padStart(2, '0')}
             </span>
           </div>
-          <p className="font-sans text-[10px] sm:text-xs text-cobalt-dark/60 mt-2 tracking-wider uppercase">
+          <p className="font-sans text-[10px] sm:text-xs text-cobalt-dark/85 font-medium mt-2 tracking-wider uppercase">
             {unit.label}
           </p>
         </div>

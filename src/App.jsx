@@ -49,7 +49,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Card container - mobile card centered on desktop */}
-      <div className="max-w-lg mx-auto bg-ivory shadow-2xl relative overflow-hidden">
+      <main className="max-w-lg mx-auto bg-ivory shadow-2xl relative overflow-hidden">
         {/* Hero */}
         <Hero />
 
@@ -90,7 +90,7 @@ export default function App() {
 
         {/* Music Player */}
         <MusicPlayer ref={musicPlayerRef} isOpened={isPassportOpen} />
-      </div>
+      </main>
     </div>
   );
 }

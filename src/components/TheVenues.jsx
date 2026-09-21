@@ -15,7 +15,7 @@ export default function TheVenues() {
         <h2 className="font-script text-4xl sm:text-5xl text-cobalt mb-2">
           La Celebración
         </h2>
-        <p className="font-cinzel text-xs text-cobalt-dark/60 tracking-[0.25em] uppercase mb-8">
+        <p className="font-cinzel text-xs text-cobalt-dark/85 font-medium tracking-[0.25em] uppercase mb-8">
           Lugar del Evento
         </p>
 
@@ -149,9 +149,9 @@ export default function TheVenues() {
                 {/* Text Info */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-1.5 text-white">
-                    <h4 className="font-cinzel text-sm sm:text-base font-semibold tracking-wider uppercase group-hover:text-[#F3E7D3] transition-colors">
+                    <p className="font-cinzel text-sm sm:text-base font-semibold tracking-wider uppercase group-hover:text-[#F3E7D3] transition-colors">
                       Abrir en Google Maps
-                    </h4>
+                    </p>
                     <ExternalLink size={14} className="text-[#C5A880] shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </div>
                   <p className="font-serif-display text-xs sm:text-sm text-[#E6EBF5]/85 italic mt-0.5 truncate">

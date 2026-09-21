@@ -20,7 +20,7 @@ export default function TheDetails() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-serif-display text-sm text-cobalt-dark/50 tracking-wider uppercase mb-12"
+          className="font-serif-display text-sm text-cobalt-dark/85 font-medium tracking-wider uppercase mb-12"
         >
           Detalles del Evento
         </motion.p>

@@ -40,9 +40,9 @@ export default function PassportCover({ onOpen }) {
                 Destino Nupcial
               </span>
             </div>
-            <h2 className="font-cinzel text-xs tracking-[0.45em] uppercase text-amber-200/90 font-semibold">
+            <p className="font-cinzel text-xs tracking-[0.45em] uppercase text-amber-200/90 font-semibold">
               Pasaporte
-            </h2>
+            </p>
           </div>
 
           {/* PARTE CENTRAL: Escudo / Monograma Dorado */}
@@ -69,9 +69,9 @@ export default function PassportCover({ onOpen }) {
               <p className="font-cinzel text-[11px] tracking-[0.3em] uppercase text-amber-300/80 font-medium">
                 Boda
               </p>
-              <h1 className="font-cinzel text-lg sm:text-xl font-bold tracking-[0.18em] text-amber-100 uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mt-0.5">
+              <h2 className="font-cinzel text-lg sm:text-xl font-bold tracking-[0.18em] text-amber-100 uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] mt-0.5">
                 William y Rosa
-              </h1>
+              </h2>
               <p className="font-serif-display text-xs text-amber-200/70 italic tracking-wider mt-1">
                 Cochabamba, Bolivia
               </p>

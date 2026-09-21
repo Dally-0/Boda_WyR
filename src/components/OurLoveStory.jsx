@@ -29,7 +29,7 @@ export default function OurLoveStory() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-serif-display text-sm text-cobalt-dark/50 tracking-wider uppercase mb-8"
+          className="font-serif-display text-sm text-cobalt-dark/85 font-medium tracking-wider uppercase mb-8"
         >
           Nuestra Historia de Amor
         </motion.p>

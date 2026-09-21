@@ -13,7 +13,7 @@ export default function DestinationMap() {
     >
       <div className="max-w-md mx-auto">
         {/* Section Header */}
-        <p className="font-cinzel text-xs text-cobalt-dark/50 tracking-[0.25em] uppercase mb-2">
+        <p className="font-cinzel text-xs text-cobalt-dark/85 font-medium tracking-[0.25em] uppercase mb-2">
           Destino de Nuestra Boda
         </p>
         <h2 className="font-script text-4xl sm:text-5xl text-cobalt mb-6">
@@ -51,7 +51,7 @@ export default function DestinationMap() {
           </motion.div>
         </motion.div>
 
-        <p className="font-serif-display text-sm text-cobalt-dark/70 italic mt-6 max-w-xs mx-auto leading-relaxed">
+        <p className="font-serif-display text-sm text-cobalt-dark/85 font-medium italic mt-6 max-w-xs mx-auto leading-relaxed">
           "Ciudad de la Eterna Primavera, el lugar donde uniremos nuestros caminos para siempre"
         </p>
       </div>

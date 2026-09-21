@@ -44,7 +44,7 @@ export default function TheGallery() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-serif-display text-sm text-cobalt-dark/50 tracking-wider uppercase mb-10"
+          className="font-serif-display text-sm text-cobalt-dark/85 font-medium tracking-wider uppercase mb-10"
         >
           Nuestros Recuerdos
         </motion.p>
