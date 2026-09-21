@@ -8,7 +8,7 @@ const photos = [
   { src: '/fotos/galeria-02-el-triunfo.webp', alt: 'Juntos en El Triunfo' },
   { src: '/fotos/detalles-boda.webp', alt: 'Columpio' },
   { src: '/fotos/galeria-03-aventura.webp', alt: 'Aventura juntos' },
-  { src: '/fotos/galeria-04-noche-especial.webp', alt: 'Noche especial' },
+  { src: '/fotos/nuevafoto4.webp', alt: 'Noche especial' },
   { src: '/fotos/nuevafoto5.webp', alt: 'Momentos felices' },
   { src: '/fotos/galeria-06-espejo.webp', alt: 'Espejo' },
   { src: '/fotos/galeria-07-vista-aerea.webp', alt: 'Vista aérea' },
