@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import { MapPin } from 'lucide-react';
 
-// Custom line-art icons inspired by the reference stationery
+// Custom line-art icons inspired by wedding stationery
 const CoupleIcon = () => (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.6" className="w-10 h-10 text-cobalt">
     {/* Groom */}
@@ -31,16 +32,44 @@ const ChurchIcon = () => (
   </svg>
 );
 
-const CameraIcon = () => (
+const ReceptionIcon = () => (
   <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.6" className="w-10 h-10 text-cobalt">
-    <rect x="8" y="16" width="32" height="24" rx="4" />
-    <path d="M18 16 l2 -5 h8 l2 5" />
-    <circle cx="24" cy="28" r="6" />
-    <circle cx="33" cy="21" r="1.5" fill="currentColor" />
-    {/* Flash burst */}
-    <line x1="10" y1="12" x2="8" y2="9" />
-    <line x1="14" y1="10" x2="14" y2="7" />
-    <line x1="18" y1="12" x2="20" y2="9" />
+    {/* Archway with garland */}
+    <path d="M12 40 V20 Q24 9 36 20 V40" />
+    <line x1="8" y1="40" x2="40" y2="40" />
+    {/* Chandelier / lantern */}
+    <path d="M24 14 V21" />
+    <polygon points="21,21 27,21 25,26 23,26" />
+    {/* Sparkle */}
+    <circle cx="24" cy="24" r="1" fill="currentColor" stroke="none" />
+    <circle cx="17" cy="18" r="1.5" fill="currentColor" stroke="none" />
+    <circle cx="31" cy="18" r="1.5" fill="currentColor" stroke="none" />
+  </svg>
+);
+
+const CentralActIcon = () => (
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.6" className="w-10 h-10 text-cobalt">
+    {/* Two intertwined rings */}
+    <ellipse cx="19" cy="25" rx="8" ry="9" />
+    <ellipse cx="29" cy="25" rx="8" ry="9" />
+    {/* Diamond sparkle */}
+    <polygon points="19,13 22,16 19,19 16,16" fill="currentColor" stroke="none" />
+    <circle cx="24" cy="9" r="1.5" fill="currentColor" stroke="none" />
+  </svg>
+);
+
+const ToastIcon = () => (
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.6" className="w-10 h-10 text-cobalt">
+    {/* Left flute */}
+    <path d="M16 10 L22 22 C23 24 21 27 19 27 L18 27 L18 38 M13 38 L23 38" />
+    <line x1="16" y1="10" x2="22" y2="10" />
+    {/* Right flute */}
+    <path d="M32 10 L26 22 C25 24 27 27 29 27 L30 27 L30 38 M25 38 L35 38" />
+    <line x1="26" y1="10" x2="32" y2="10" />
+    {/* Sparkles */}
+    <circle cx="24" cy="12" r="1.5" fill="currentColor" stroke="none" />
+    <circle cx="21" cy="7" r="1" fill="currentColor" stroke="none" />
+    <circle cx="27" cy="7" r="1" fill="currentColor" stroke="none" />
   </svg>
 );
 
@@ -54,18 +83,6 @@ const DinnerIcon = () => (
     <circle cx="23" cy="25" r="11" />
     <circle cx="23" cy="25" r="8" strokeDasharray="2 2" />
     <path d="M23 23 c-1 -1.5 -2.5 -1.5 -3.5 0 c-1 1.5 3.5 4.5 3.5 4.5 s4.5 -3 3.5 -4.5 c-1 -1.5 -2.5 -1.5 -3.5 0" fill="currentColor" stroke="none" />
-  </svg>
-);
-
-const MusicIcon = () => (
-  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.6" className="w-10 h-10 text-cobalt">
-    {/* Horn / Saxophone */}
-    <path d="M16 38 c-4 0 -6 -3 -6 -7 s2 -9 6 -13 l12 -8 v6 l-10 7 c-3 3 -4 6 -4 8 s1 3 3 3 h3 l2 -4 h4 l-1 8 h-6 z" />
-    {/* Music notes and sparkle */}
-    <path d="M34 16 v-7 l6 -2 v7" />
-    <circle cx="33" cy="16" r="2" fill="currentColor" />
-    <circle cx="39" cy="14" r="2" fill="currentColor" />
-    <path d="M26 8 l1 2 l2 1 l-2 1 l-1 2 l-1 -2 l-2 -1 l2 -1 z" fill="currentColor" stroke="none" />
   </svg>
 );
 
@@ -85,6 +102,22 @@ const CakeIcon = () => (
     {/* Decorative scallops */}
     <path d="M14 30 q5 2.5 10 0 q5 2.5 10 0" />
     <path d="M18 20 q3 2.5 6 0 q3 2.5 6 0" />
+  </svg>
+);
+
+const BouquetIcon = () => (
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.6" className="w-10 h-10 text-cobalt">
+    {/* Central bouquet flowers */}
+    <circle cx="24" cy="15" r="5" />
+    <path d="M22 15 a2 2 0 0 1 4 0" />
+    <circle cx="16" cy="19" r="4.5" />
+    <circle cx="32" cy="19" r="4.5" />
+    <circle cx="24" cy="23" r="4.5" />
+    {/* Bouquet wrap */}
+    <path d="M18 25 L21 38 L27 38 L30 25" />
+    {/* Ribbon bow */}
+    <path d="M24 38 c-3 2 -4 5 -5 6 M24 38 c3 2 4 5 5 6" />
+    <circle cx="24" cy="38" r="1.5" fill="currentColor" stroke="none" />
   </svg>
 );
 
@@ -125,12 +158,14 @@ const CompassRose = () => (
 );
 
 const events = [
-  { time: '2:00 PM', label: 'Ceremonia Civil', Icon: CoupleIcon },
-  { time: '4:00 PM', label: 'Ceremonia Religiosa', Icon: ChurchIcon, note: '(Por confirmar)' },
-  { time: '5:00 PM', label: 'Sesión de Fotos', Icon: CameraIcon },
-  { time: '6:00 PM', label: 'Cena & Brindis', Icon: DinnerIcon },
-  { time: '7:30 PM', label: 'Primer Baile & Fiesta', Icon: MusicIcon },
-  { time: '9:30 PM', label: 'Torta de Bodas', Icon: CakeIcon },
+  { time: '2:00 PM', label: 'Matrimonio Civil', Icon: CoupleIcon },
+  { time: '4:00 PM', label: 'Matrimonio Religioso', Icon: ChurchIcon },
+  { time: '5:00 PM', label: 'Recepción', Icon: ReceptionIcon },
+  { time: '', label: 'Acto Central de la Boda', Icon: CentralActIcon },
+  { time: '', label: 'Brindis de Honor', Icon: ToastIcon },
+  { time: '', label: 'Banquete', Icon: DinnerIcon },
+  { time: '', label: 'Pastel de Boda', Icon: CakeIcon },
+  { time: '', label: 'Lanzamiento del Bouquet', Icon: BouquetIcon },
 ];
 
 export default function WeddingProgram() {
@@ -163,7 +198,7 @@ export default function WeddingProgram() {
         </div>
 
         {/* Timeline Body with central line and alternating items */}
-        <div className="relative px-4 sm:px-6 pt-4 pb-10 bg-white">
+        <div className="relative px-4 sm:px-6 pt-6 pb-8 bg-white">
           {/* Central Vertical Line */}
           <div className="absolute top-0 bottom-8 left-1/2 -translate-x-1/2 w-[1.5px] bg-cobalt-dark/25" />
 
@@ -177,24 +212,25 @@ export default function WeddingProgram() {
                   initial={{ opacity: 0, y: 15 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.08 }}
+                  transition={{ duration: 0.5, delay: index * 0.06 }}
                   className="relative flex items-center min-h-[52px]"
                 >
                   {/* Left Side */}
-                  <div className="w-1/2 pr-6 flex items-center justify-end text-right">
+                  <div className="w-1/2 pr-5 sm:pr-6 flex items-center justify-end text-right">
                     {isEven ? (
                       <div>
-                        <p className="font-cinzel text-sm sm:text-base font-bold text-cobalt-dark leading-tight">
-                          {event.time}
-                        </p>
-                        <p className="font-serif-display text-xs sm:text-sm text-cobalt-dark/80 font-medium mt-0.5">
+                        {event.time ? (
+                          <p className="font-cinzel text-sm sm:text-base font-bold text-cobalt-dark leading-tight">
+                            {event.time}
+                          </p>
+                        ) : (
+                          <span className="inline-block px-2 py-0.5 rounded-full bg-cobalt/10 text-cobalt font-cinzel text-[9px] tracking-wider uppercase font-semibold">
+                            Celebración
+                          </span>
+                        )}
+                        <p className="font-serif-display text-xs sm:text-sm text-cobalt-dark/85 font-medium mt-0.5 leading-snug">
                           {event.label}
                         </p>
-                        {event.note && (
-                          <p className="font-sans text-[10px] text-cobalt-dark/45 italic">
-                            {event.note}
-                          </p>
-                        )}
                       </div>
                     ) : (
                       <div className="w-10 h-10 flex items-center justify-end">
@@ -207,24 +243,25 @@ export default function WeddingProgram() {
                   <div className="absolute left-1/2 -translate-x-1/2 w-3.5 h-[1.5px] bg-cobalt-dark/40 z-10" />
 
                   {/* Right Side */}
-                  <div className="w-1/2 pl-6 flex items-center justify-start text-left">
+                  <div className="w-1/2 pl-5 sm:pl-6 flex items-center justify-start text-left">
                     {isEven ? (
                       <div className="w-10 h-10 flex items-center justify-start">
                         <event.Icon />
                       </div>
                     ) : (
                       <div>
-                        <p className="font-cinzel text-sm sm:text-base font-bold text-cobalt-dark leading-tight">
-                          {event.time}
-                        </p>
-                        <p className="font-serif-display text-xs sm:text-sm text-cobalt-dark/80 font-medium mt-0.5">
+                        {event.time ? (
+                          <p className="font-cinzel text-sm sm:text-base font-bold text-cobalt-dark leading-tight">
+                            {event.time}
+                          </p>
+                        ) : (
+                          <span className="inline-block px-2 py-0.5 rounded-full bg-cobalt/10 text-cobalt font-cinzel text-[9px] tracking-wider uppercase font-semibold">
+                            Celebración
+                          </span>
+                        )}
+                        <p className="font-serif-display text-xs sm:text-sm text-cobalt-dark/85 font-medium mt-0.5 leading-snug">
                           {event.label}
                         </p>
-                        {event.note && (
-                          <p className="font-sans text-[10px] text-cobalt-dark/45 italic">
-                            {event.note}
-                          </p>
-                        )}
                       </div>
                     )}
                   </div>
@@ -235,6 +272,21 @@ export default function WeddingProgram() {
 
           {/* Terminal Tick Mark at base of vertical line */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-4 h-[1.5px] bg-cobalt-dark/40" />
+
+          {/* Breve indicación: misma ubicación */}
+          <div className="mt-10 pt-4 border-t border-cobalt/10">
+            <div className="bg-[#FAF7F2] rounded-xl p-3.5 border border-cobalt/15 text-center shadow-2xs">
+              <div className="flex items-center justify-center gap-1.5 text-cobalt mb-1">
+                <MapPin size={14} className="text-cobalt" />
+                <span className="font-cinzel text-[11px] font-bold tracking-wider uppercase">
+                  Misma Ubicación
+                </span>
+              </div>
+              <p className="font-serif-display text-xs sm:text-sm text-cobalt-dark/80 italic leading-relaxed">
+                Tanto el matrimonio civil como el religioso y el acto central se realizarán en el mismo lugar.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </motion.section>

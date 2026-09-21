@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 import FloralCorner from './FloralCorner';
 
 const container = {
@@ -91,14 +92,24 @@ export default function Hero() {
         {/* Scroll indicator */}
         <motion.div
           variants={fadeUp}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          onClick={() => {
+            const nextEl = document.getElementById('countdown');
+            if (nextEl) {
+              nextEl.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          className="absolute bottom-20 sm:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-pointer select-none group z-20"
         >
+          <span className="font-cinzel text-[11px] sm:text-xs tracking-[0.25em] uppercase text-white/90 drop-shadow-md group-hover:text-white transition-colors mb-1 whitespace-nowrap">
+            Desliza hacia abajo
+          </span>
           <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2"
+            animate={{ y: [0, 6, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+            className="flex flex-col items-center -space-y-2 text-white/80 group-hover:text-white transition-colors"
           >
-            <div className="w-1 h-2 bg-white/70 rounded-full" />
+            <ChevronDown size={22} className="drop-shadow-md" />
+            <ChevronDown size={22} className="opacity-50 drop-shadow-md" />
           </motion.div>
         </motion.div>
       </motion.div>

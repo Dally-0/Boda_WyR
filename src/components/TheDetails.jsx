@@ -59,6 +59,14 @@ export default function TheDetails() {
               </svg>
             </div>
           </div>
+
+          {/* Reserved for bride note */}
+          <div className="mt-6 mx-auto max-w-xs bg-white/70 backdrop-blur-xs rounded-xl p-4 border border-cobalt/15 shadow-xs">
+            <p className="font-serif-display text-sm text-cobalt-dark/85 leading-relaxed">
+              <span className="font-semibold text-cobalt block mb-1">✨ Nota importante:</span>
+              En el caso de las mujeres, la única que puede usar blanco es la novia.
+            </p>
+          </div>
         </motion.div>
       </div>
 
