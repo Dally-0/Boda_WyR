@@ -23,8 +23,10 @@ export default function Hero() {
       {/* Background image with Ken Burns */}
       <div className="absolute inset-0">
         <img
-          src="/fotos/_MG_3621.jpg.jpeg"
+          src="/fotos/hero-portada.webp"
           alt="William y Rosa"
+          fetchPriority="high"
+          decoding="async"
           className="w-full h-full object-cover object-[center_25%] animate-[ken-burns_25s_ease-in-out_infinite_alternate]"
         />
         <div className="hero-gradient absolute inset-0" />

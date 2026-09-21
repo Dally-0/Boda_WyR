@@ -4,15 +4,15 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import FloralCorner from './FloralCorner';
 
 const photos = [
-  { src: '/fotos/retouch_2025062217375539.jpg.jpeg', alt: 'William y Rosa' },
-  { src: '/fotos/_MG_3372.jpg.jpeg', alt: 'Juntos en El Triunfo' },
-  { src: '/fotos/20250906_173023.jpg.jpeg', alt: 'Columpio' },
-  { src: '/fotos/retouch_2025080621240228.jpg.jpeg', alt: 'Aventura juntos' },
-  { src: '/fotos/20260614_192840.jpg.jpeg', alt: 'Noche especial' },
-  { src: '/fotos/20250621_101825.jpg.jpeg', alt: 'Momentos felices' },
-  { src: '/fotos/20250906_165116.jpg.jpeg', alt: 'Espejo' },
-  { src: '/fotos/DJI_0426.JPG', alt: 'Vista aérea' },
-  { src: '/fotos/_MG_3622.jpg.jpeg', alt: 'Pareja' },
+  { src: '/fotos/galeria-01-principal.webp', alt: 'William y Rosa' },
+  { src: '/fotos/galeria-02-el-triunfo.webp', alt: 'Juntos en El Triunfo' },
+  { src: '/fotos/detalles-boda.webp', alt: 'Columpio' },
+  { src: '/fotos/galeria-03-aventura.webp', alt: 'Aventura juntos' },
+  { src: '/fotos/galeria-04-noche-especial.webp', alt: 'Noche especial' },
+  { src: '/fotos/galeria-05-momentos-felices.webp', alt: 'Momentos felices' },
+  { src: '/fotos/galeria-06-espejo.webp', alt: 'Espejo' },
+  { src: '/fotos/galeria-07-vista-aerea.webp', alt: 'Vista aérea' },
+  { src: '/fotos/galeria-08-pareja.webp', alt: 'Pareja' },
 ];
 
 export default function TheGallery() {
@@ -72,6 +72,7 @@ export default function TheGallery() {
                   index === 0 ? 'h-48 sm:h-64' : 'h-24 sm:h-32'
                 }`}
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-cobalt-dark/0 hover:bg-cobalt-dark/10 transition-colors duration-300" />
             </motion.div>

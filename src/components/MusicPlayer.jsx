@@ -175,7 +175,7 @@ const MusicPlayer = forwardRef(function MusicPlayer({ isOpened }, ref) {
         ref={audioRef}
         src={audioSrc}
         loop
-        preload="auto"
+        preload="none"
         playsInline
       />
 

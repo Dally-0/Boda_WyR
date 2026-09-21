@@ -7,7 +7,7 @@ export default function OurLoveStory() {
       {/* Torn Paper Photo with hand-cut paper edge */}
       <div className="mb-12">
         <TornPaperPhotoFrame
-          src="/fotos/_MG_3407.jpg.jpeg"
+          src="/fotos/nuestra-historia.webp"
           alt="William y Rosa - Nuestra Historia"
           objectPosition="object-[center_28%]"
           height="h-80 sm:h-96 md:h-[420px]"

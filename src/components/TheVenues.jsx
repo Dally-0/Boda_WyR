@@ -55,8 +55,10 @@ export default function TheVenues() {
             {/* Left: Photo */}
             <div className="relative w-full h-full overflow-hidden bg-cobalt-dark/10">
               <img
-                src="/fotos/losjardines.jpeg"
+                src="/fotos/salon-los-jardines.webp"
                 alt="Centro de Eventos Los Jardines"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-cobalt-dark/70 via-transparent to-transparent pointer-events-none" />

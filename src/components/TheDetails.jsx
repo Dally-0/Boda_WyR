@@ -73,7 +73,7 @@ export default function TheDetails() {
       {/* Torn Paper Photo moved to the bottom */}
       <div className="mt-4">
         <TornPaperPhotoFrame
-          src="/fotos/20250906_173023.jpg.jpeg"
+          src="/fotos/detalles-boda.webp"
           alt="William y Rosa - Detalles"
           objectPosition="object-[center_35%]"
           height="h-72 sm:h-88 md:h-[380px]"
