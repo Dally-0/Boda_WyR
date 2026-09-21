@@ -170,8 +170,9 @@ const events = [
 
 export default function WeddingProgram() {
   return (
-    <motion.section
-      id="program"
+    <>
+      <motion.section
+        id="program"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -272,23 +273,30 @@ export default function WeddingProgram() {
 
           {/* Terminal Tick Mark at base of vertical line */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-4 h-[1.5px] bg-cobalt-dark/40" />
-
-          {/* Breve indicación: misma ubicación */}
-          <div className="mt-10 pt-4 border-t border-cobalt/10">
-            <div className="bg-[#FAF7F2] rounded-xl p-3.5 border border-cobalt/15 text-center shadow-2xs">
-              <div className="flex items-center justify-center gap-1.5 text-cobalt mb-1">
-                <MapPin size={14} className="text-cobalt" />
-                <span className="font-cinzel text-[11px] font-bold tracking-wider uppercase">
-                  Misma Ubicación
-                </span>
-              </div>
-              <p className="font-serif-display text-xs sm:text-sm text-cobalt-dark/80 italic leading-relaxed">
-                Tanto el matrimonio civil como el religioso y el acto central se realizarán en el mismo lugar.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </motion.section>
-  );
+
+    {/* Breve indicación: ubicada debajo de la sección con id="program" */}
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6 }}
+      className="px-4 sm:px-6 pb-12 bg-ivory text-center"
+    >
+      <div className="max-w-sm sm:max-w-md mx-auto bg-white/80 backdrop-blur-xs rounded-xl p-4 border border-cobalt/15 text-center shadow-xs">
+        <div className="flex items-center justify-center gap-1.5 text-cobalt mb-1.5">
+          <MapPin size={15} className="text-cobalt" />
+          <span className="font-cinzel text-xs font-bold tracking-wider uppercase">
+            Misma Ubicación
+          </span>
+        </div>
+        <p className="font-serif-display text-xs sm:text-sm text-cobalt-dark/85 font-medium leading-relaxed">
+          Tanto el matrimonio civil como el religioso, el acto central y banquete se realizarán en el mismo lugar.
+        </p>
+      </div>
+    </motion.div>
+  </>
+);
 }
